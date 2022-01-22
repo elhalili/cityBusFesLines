@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/main.css">
+    <link rel="icon" href="src/images/logo.png" type="image/png">
     <title>خطوط حافلات فاس</title>
 </head>
 <body>
-    
+    <main>
+        <section class="landscape">
+            <img src="src/images/logo.png" alt="city bus" ">
+            <h1>
+                خطوط النقل الحضري بمدينة فاس
+            </h1>
+            <p>
+                يقدم هذا الموقع خدمة تسهل معرفة وجهات حافلات النقل الحضري التابة لشركة سيتي باس بمدينة فاس
+            </p>
+        </section>
+        <section class="main">
+            <h2>
+                اختر رقم الخط
+            </h2>
+            <div class="input-field">
+                <input type="text" name="input" id="input" placeholder="ادخل الخط">
+                <div id="search" onclick="run()">ابحث</div>
+            </div>
+            <div id="resault" class="resault">
+                <div class="rs">
+                    <h3>
+                        محطة الانطلاق
+                    </h3>
+                    <p id="start">
+                    </p>
+                </div>
+                <div></div>
+                <div class="rs">
+                    <h3>
+                        محطة الوصول
+                    </h3>
+                    <p id="end">
+                    </p>
+                </div>
+            </div>
+            <div id="warning">
+                !!!ادخال غير موجود او غير متوافق
+            </div>
+        </section>
+        <footer>
+            <a href="https://github.com/elhalili" target="_blank">GitHub</a>
+        </footer>
+    </main>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
